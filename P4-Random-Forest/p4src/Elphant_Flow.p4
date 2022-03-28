@@ -1304,9 +1304,9 @@ control MyIngress(inout headers hdr,
         if (meta.is_first == 1) {
             meta.time_first_pkt = standard_metadata.ingress_global_timestamp;
             reg_time_first_pkt.write((bit<32>)meta.register_index, meta.time_first_pkt);
-			reg_srcip.write((bit<32>)meta.register_index, hdr.ipv4.srcAddr);
-			reg_srcport.write((bit<32>)meta.register_index, meta.hdr_srcport);
-			reg_dstport.write((bit<32>)meta.register_index, meta.hdr_dstport);
+	    reg_srcip.write((bit<32>)meta.register_index, hdr.ipv4.srcAddr);
+	    reg_srcport.write((bit<32>)meta.register_index, meta.hdr_srcport);
+	    reg_dstport.write((bit<32>)meta.register_index, meta.hdr_dstport);
             counter_flows.count(0);
         }
 
@@ -1314,8 +1314,7 @@ control MyIngress(inout headers hdr,
 		meta.Npkts = meta.Npkts + 1;
 		reg_Npkts.write((bit<32>)meta.register_index, meta.Npkts);
 
-        reg_time_last_pkt.write((bit<32>)meta.register_index,
-			standard_metadata.ingress_global_timestamp );
+        reg_time_last_pkt.write((bit<32>)meta.register_index, standard_metadata.ingress_global_timestamp);
 
 
         if (meta.Npkts == 1){
@@ -1388,16 +1387,16 @@ control MyIngress(inout headers hdr,
 				                    level_1_9.apply();
 				                    if (meta.class1 == CLASS_NOT_SET) {
 				                        level_1_10.apply();
-			                            if (meta.class1 == CLASS_NOT_SET){
-					                        level_1_11.apply();
-                                            if (meta.class1 == CLASS_NOT_SET){
-					                            level_1_12.apply();
-												if (meta.class1 == CLASS_NOT_SET) {
-				                					level_1_13.apply();
-				                					if (meta.class1 == CLASS_NOT_SET) {
-				                    					level_1_14.apply();
-				                    					if (meta.class1 == CLASS_NOT_SET) {
-				                        					level_1_15.apply();
+			                                if (meta.class1 == CLASS_NOT_SET){
+					                    level_1_11.apply();
+                                                            if (meta.class1 == CLASS_NOT_SET){
+					                        level_1_12.apply();
+								if (meta.class1 == CLASS_NOT_SET) {
+				                		    level_1_13.apply();
+				                		    if (meta.class1 == CLASS_NOT_SET) {
+				                    			level_1_14.apply();
+				                    			if (meta.class1 == CLASS_NOT_SET) {
+				                        		    level_1_15.apply();
         }}}}}}}}}}}}}}
 
 		// desicion tree 2
@@ -1425,16 +1424,16 @@ control MyIngress(inout headers hdr,
 				                    level_2_9.apply();
 				                    if (meta.class2 == CLASS_NOT_SET) {
 				                        level_2_10.apply();
-			                            if (meta.class2 == CLASS_NOT_SET){
-					                        level_2_11.apply();
-                                            if (meta.class2 == CLASS_NOT_SET){
-					                            level_2_12.apply();
-												if (meta.class2 == CLASS_NOT_SET) {
-				               						level_2_13.apply();
-				                					if (meta.class2 == CLASS_NOT_SET) {
-				                    					level_2_14.apply();
-				                    					if (meta.class2 == CLASS_NOT_SET) {
-				                        					level_2_15.apply();
+			                                if (meta.class2 == CLASS_NOT_SET){
+					                    level_2_11.apply();
+                                                            if (meta.class2 == CLASS_NOT_SET){
+					                        level_2_12.apply();
+								if (meta.class2 == CLASS_NOT_SET) {
+				               			    level_2_13.apply();
+				                		    if (meta.class2 == CLASS_NOT_SET) {
+				                    			level_2_14.apply();
+				                    			if (meta.class2 == CLASS_NOT_SET) {
+				                        		    level_2_15.apply();
         }}}}}}}}}}}}}}
 
 		// desicion tree 3
@@ -1462,16 +1461,16 @@ control MyIngress(inout headers hdr,
 				                    level_3_9.apply();
 				                    if (meta.class3 == CLASS_NOT_SET) {
 				                        level_3_10.apply();
-			                            if (meta.class3 == CLASS_NOT_SET){
-					                        level_3_11.apply();
-                                            if (meta.class3 == CLASS_NOT_SET){
-					                            level_3_12.apply();
-												if (meta.class3 == CLASS_NOT_SET) {
-				                					level_3_13.apply();
-				                					if (meta.class3 == CLASS_NOT_SET) {
-				                    					level_3_14.apply();
-				                    					if (meta.class3 == CLASS_NOT_SET) {
-				                        					level_3_15.apply();
+			                                if (meta.class3 == CLASS_NOT_SET){
+					                    level_3_11.apply();
+                                                            if (meta.class3 == CLASS_NOT_SET){
+					                        level_3_12.apply();
+								if (meta.class3 == CLASS_NOT_SET) {
+				                		    level_3_13.apply();
+				                		    if (meta.class3 == CLASS_NOT_SET) {
+				                    			level_3_14.apply();
+				                    			if (meta.class3 == CLASS_NOT_SET) {
+				                        		    level_3_15.apply();
         }}}}}}}}}}}}}}
 
 		// desicion tree 4
@@ -1499,16 +1498,16 @@ control MyIngress(inout headers hdr,
 				                    level_4_9.apply();
 				                    if (meta.class4 == CLASS_NOT_SET) {
 				                        level_4_10.apply();
-			                            if (meta.class4 == CLASS_NOT_SET){
-					                        level_4_11.apply();
-                                            if (meta.class4 == CLASS_NOT_SET){
-					                            level_4_12.apply();
-												if (meta.class4 == CLASS_NOT_SET) {
-				               						level_4_13.apply();
-				                					if (meta.class4 == CLASS_NOT_SET) {
-				                    					level_4_14.apply();
-				                    					if (meta.class4 == CLASS_NOT_SET) {
-				                        					level_4_15.apply();
+			                                if (meta.class4 == CLASS_NOT_SET){
+					                    level_4_11.apply();
+                                                            if (meta.class4 == CLASS_NOT_SET){
+					                        level_4_12.apply();
+								if (meta.class4 == CLASS_NOT_SET) {
+				               			    level_4_13.apply();
+				                		    if (meta.class4 == CLASS_NOT_SET) {
+				                    			level_4_14.apply();
+				                    			if (meta.class4 == CLASS_NOT_SET) {
+				                        		    level_4_15.apply();
         }}}}}}}}}}}}}}
 
 		// desicion tree 5
@@ -1536,16 +1535,16 @@ control MyIngress(inout headers hdr,
 				                    level_5_9.apply();
 				                    if (meta.class5 == CLASS_NOT_SET) {
 				                        level_5_10.apply();
-			                            if (meta.class5 == CLASS_NOT_SET){
-					                        level_5_11.apply();
-                                            if (meta.class5 == CLASS_NOT_SET){
-					                            level_5_12.apply();
-												if (meta.class5 == CLASS_NOT_SET) {
-				               						level_5_13.apply();
-				                					if (meta.class5 == CLASS_NOT_SET) {
-				                    					level_5_14.apply();
-				                    					if (meta.class5 == CLASS_NOT_SET) {
-				                        					level_5_15.apply();
+			                                if (meta.class5 == CLASS_NOT_SET){
+					                    level_5_11.apply();
+                                                            if (meta.class5 == CLASS_NOT_SET){
+					                        level_5_12.apply();
+								if (meta.class5 == CLASS_NOT_SET) {
+				               			    level_5_13.apply();
+				                		    if (meta.class5 == CLASS_NOT_SET) {
+				                    			level_5_14.apply();
+				                    			if (meta.class5 == CLASS_NOT_SET) {
+				                        		    level_5_15.apply();
         }}}}}}}}}}}}}}
 
 		//voting from results of different trees
@@ -1582,7 +1581,7 @@ control MyIngress(inout headers hdr,
             reg_class.read(meta.class, (bit<32>)meta.register_index);
 
             if (meta.class == 0) counter_false_detection_Elephant.count(0);
-			else counter_false_detection_mice_rest.count(0);
+	    else counter_false_detection_mice_rest.count(0);
 
         }
 
