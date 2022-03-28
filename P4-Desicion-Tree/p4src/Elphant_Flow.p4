@@ -456,8 +456,7 @@ control MyIngress(inout headers hdr,
 		meta.Npkts = meta.Npkts + 1;
 		reg_Npkts.write((bit<32>)meta.register_index, meta.Npkts);
 
-        reg_time_last_pkt.write((bit<32>)meta.register_index,
-			standard_metadata.ingress_global_timestamp );
+        reg_time_last_pkt.write((bit<32>)meta.register_index, standard_metadata.ingress_global_timestamp);
 
 
         if (meta.Npkts == 1){
@@ -528,16 +527,16 @@ control MyIngress(inout headers hdr,
 				                    level9.apply();
 				                    if (meta.class == CLASS_NOT_SET) {
 				                        level10.apply();
-			                            if (meta.class == CLASS_NOT_SET){
-					                        level11.apply();
-                                            if (meta.class == CLASS_NOT_SET){
-					                            level12.apply();
-                                                if (meta.class == CLASS_NOT_SET){
-					                                level13.apply();
-                                                    if (meta.class == CLASS_NOT_SET){
-					                                    level14.apply();
-                                                        if (meta.class == CLASS_NOT_SET){
-					                                        level15.apply();
+			                                if (meta.class == CLASS_NOT_SET){
+					                    level11.apply();
+                                                            if (meta.class == CLASS_NOT_SET){
+					                        level12.apply();
+                                                                if (meta.class == CLASS_NOT_SET){
+					                            level13.apply();
+                                                                    if (meta.class == CLASS_NOT_SET){
+					                                level14.apply();
+                                                                        if (meta.class == CLASS_NOT_SET){
+					                                    level15.apply();
         }}}}}}}}}}}}}}
         reg_class.write((bit<32>)meta.register_index, meta.class);
         if (meta.class == 1) counter_false_detection_mice.count(0);
