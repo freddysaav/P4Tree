@@ -37,7 +37,7 @@ control MyIngress(inout headers hdr,
     register<bit<48>>(MAX_REGISTER_ENTRIES) reg_time_last_pkt;
     register<bit<48>>(MAX_REGISTER_ENTRIES) reg_time_first_pkt;
     register<bit<32>>(MAX_REGISTER_ENTRIES) reg_Npkts;
-	register<bit<32>>(MAX_REGISTER_ENTRIES) reg_srcip;
+    register<bit<32>>(MAX_REGISTER_ENTRIES) reg_srcip;
     register<bit<16>>(MAX_REGISTER_ENTRIES) reg_srcport;
     register<bit<16>>(MAX_REGISTER_ENTRIES) reg_dstport;
 
