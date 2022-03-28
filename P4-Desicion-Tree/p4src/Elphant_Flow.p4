@@ -61,11 +61,11 @@ control MyIngress(inout headers hdr,
     action init_register() {
 	//intialise the registers to 0
     reg_time_last_pkt.write(meta.register_index, 0);
- 	reg_Npkts.write(meta.register_index, 0);
-	reg_srcip.write(meta.register_index, 0);
-	reg_class.write(meta.register_index, 0);
- 	reg_srcport.write(meta.register_index, 0);
- 	reg_dstport.write(meta.register_index, 0);
+    reg_Npkts.write(meta.register_index, 0);
+    reg_srcip.write(meta.register_index, 0);
+    reg_class.write(meta.register_index, 0);
+    reg_srcport.write(meta.register_index, 0);
+    reg_dstport.write(meta.register_index, 0);
     reg_Flow_length.write(meta.register_index, 0x0);
     reg_BanderaR.write(meta.register_index, 0);
     reg_feature4.write(meta.register_index, 0x0);
