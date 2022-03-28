@@ -58,6 +58,7 @@ control MyIngress(inout headers hdr,
     counter(1, CounterType.packets) counter_false_detection_Elephant;
     counter(1, CounterType.packets) counter_false_detection_mice;
     counter(1, CounterType.packets) counter_false_detection_mice_rest;
+    
     action init_register() {
 	//intialise the registers to 0
     reg_time_last_pkt.write(meta.register_index, 0);
