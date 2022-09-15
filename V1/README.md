@@ -1,8 +1,3 @@
-# Elephant_flows
-## Introduction
-
-Main references for this work are [IISY](https://github.com/cucl-srg/IIsy) and [SwitchTree](https://www.researchgate.net/publication/344827700_SwitchTree_In-network_Computing_and_Traffic_Analyses_with_Random_Forests).
-
 ## Installation
 
 As each component under this repository is independent, installation instructions and dependencies are listed separately under each folder
@@ -27,9 +22,9 @@ This folder saves the training datasets in CSV format.
 
 The version of our algorithm in python to corroborate and compare the results.
 
-### P4-Desicion-Tree and P4-Random-Forest
+### P4-Desicion-Tree and P4-Random-Forest(3-5-7)
 
-Contain all the necessary files to run the emulation of our algorithm on P4, with a decision tree or with a random forest, plus a quick start guide.
+Contain all the necessary files to run the emulation of our algorithm on P4, with a decision tree or with a random forest of 3, 5 or 7 trees, plus a quick start guide.
 
 ## Citation
 
