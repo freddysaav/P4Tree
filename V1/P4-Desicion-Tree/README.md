@@ -1,13 +1,15 @@
 # Quick Start Guide
 
 To run the code
-1. Use or Create a BMV2 VM or machine. You can download our ready-to-use machine [here](https://drive.google.com/drive/folders/122pO1naACjXhwBUpNBiYIfDq9REoIMp-?usp=sharing), or you can create it yourself [here](https://nsg-ethz.github.io/p4-utils/installation.html).
+1. Use the machine...
 
-2. Clone the repository in your home folder
+2. cd /home/vagrant/tutorials/exercises/P4Tree/P4-Desicion-Tree
 
-3. cd to P4-Desicion-Tree folder 
+3. sudo make
 
-4. `sudo p4run`
+4. In another terminal in the same path run:
+
+'simple_switch_CLI < s1-commands\(uni1\).txt' 
 
 5. In the mininet CLI open a new terminal on host 1 `xterm h1`.
 
@@ -17,13 +19,17 @@ To run the code
 
 7. To display the results, in another terminal run:
 
-`python mycontroller.py`
+`simple_switch_CLI < get_results.txt`
 
-8. Note you may need to exit and type `sudo p4run` again to reinitialize and do a new test with new data. 
+8. To restart the program, the following command is executed in the same path:
+
+'sudo make clean'
+
+Return to step 1
 
 9. In case you want to do performance evaluations and heavy tests: debugging and logging should be disabled otherwise several packets will be lost during real-time tests. This can be done by recompiling bmv2 using the options that disable logging.
 
-`cd p4-tools/bmv2/`
+`cd /home/vagrant/behavioral-model`
 
 `sudo ./configure 'CXXFLAGS=-g -O3' 'CFLAGS=-g -O3' --disable-logging-macros --disable-elogger`
 
