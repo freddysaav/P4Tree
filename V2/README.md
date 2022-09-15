@@ -1,8 +1,3 @@
-# Elephant_flows
-## Introduction
-
-Main references for this work are [IISY](https://github.com/cucl-srg/IIsy) and [SwitchTree](https://www.researchgate.net/publication/344827700_SwitchTree_In-network_Computing_and_Traffic_Analyses_with_Random_Forests).
-
 ## Installation
 
 As each component under this repository is independent, installation instructions and dependencies are listed separately under each folder
