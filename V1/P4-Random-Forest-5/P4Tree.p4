@@ -8,7 +8,7 @@
 /* CONSTANTS */
 #define MAX_REGISTER_ENTRIES 4800000
 #define CLASS_NOT_SET 10000// A big number
-#define FLOW_TIMEOUT 324000000 //5 seconds
+#define FLOW_TIMEOUT 5450000 //5 seconds
 #define THRESHOLD 100000 // Umbral
 
 
