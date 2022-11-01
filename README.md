@@ -18,11 +18,11 @@ Traditional multipath routing approaches such as Equal Cost Multi-Path (ECMP) an
 
 ## V1
 
-The initial version is made with [bmv2](https://github.com/p4lang/behavioral-model) on Ubuntu 16.
+The initial version is made with [bmv2](https://github.com/p4lang/behavioral-model) on [Ubuntu 16][https://1drv.ms/u/s!AtZ6o_J9CLDllhYKJVP4QZ3s_Ya1?e=lSg791]. 
 
 ## V2
 
-This version incorporates [p4-utils](https://github.com/nsg-ethz/p4-utils), which makes P4 networks easier to build and is made with Ubuntu 18.
+This version incorporates [p4-utils](https://github.com/nsg-ethz/p4-utils), which makes P4 networks easier to build and is made with [Ubuntu 18][https://1drv.ms/u/s!AtZ6o_J9CLDllhfWD1NdkqRiLwkV?e=p2f6gB].
 
 Note: This version only works for small or low speed traffic traces.
 
