@@ -35,4 +35,4 @@ Note: This version only works for small or low speed traffic traces.
 
 When referencing this work, please use the following citation:
 
-An open access version of the paper is available at:
+An open access version of the paper is available at: http://bit.ly/3fRsTPo
